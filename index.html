@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Sachan — AI Developer & Data Scientist</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-hs">HS</span><span class="brand-dot">.</span>
+      </a>
+      <div class="d-flex align-items-center gap-3 ms-auto">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="nav-hamburger"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-8 col-xl-7">
+          <div class="hero-tag reveal">
+            <span class="tag-dot"></span> Available for opportunities
+          </div>
+          <h1 class="hero-name reveal reveal-delay-1">
+            Harsh<br /><span class="hero-name-accent">Sachan</span>
+          </h1>
+          <div class="hero-typing-wrap reveal reveal-delay-2">
+            <span class="typing-prefix">I build</span>
+            <span class="typed-text" id="typedText"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+          <p class="hero-bio reveal reveal-delay-3">
+            B.Tech CS (AI Specialization) student at Galgotias College, Oracle Certified Data Science Professional,
+            and Full Stack developer crafting ML-powered applications that bridge data intelligence with beautiful interfaces.
+          </p>
+          <div class="hero-cta reveal reveal-delay-4">
+            <a href="Mydatascienceresume.pdf" download class="btn-primary-custom">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn-outline-custom">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+          <div class="hero-socials reveal reveal-delay-5">
+            <a href="https://linkedin.com/in/harsh-sachan-b3b24a2a2" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/hsachan295-source" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:hsachan295@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-5 d-none d-lg-flex justify-content-end">
+          <div class="hero-card-float reveal reveal-delay-2">
+            <div class="float-stat">
+              <span class="stat-num">8.0</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="float-stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">ML Projects</span>
+            </div>
+            <div class="float-stat">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="float-badge">
+              <i class="fas fa-certificate"></i>
+              Oracle Certified
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5 reveal">
+          <div class="about-visual">
+            <div class="av-initials">HS</div>
+            <div class="av-ring av-ring-1"></div>
+            <div class="av-ring av-ring-2"></div>
+            <div class="av-badge"><i class="fas fa-brain"></i> AI Specialist</div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="reveal reveal-delay-1">
+            <p class="about-lead">
+              I'm a final-year Computer Science student specialising in Artificial Intelligence, with a passion for building
+              intelligent systems that solve real problems.
+            </p>
+            <p class="about-body">
+              From end-to-end machine learning pipelines to full-stack MERN applications, I work across the data science
+              and development stack. I hold an Oracle Cloud Infrastructure certification in Data Science and have hands-on
+              experience with Deep Learning, Generative AI (RAG, LangChain), and interactive dashboards.
+            </p>
+            <div class="about-edu">
+              <div class="edu-item">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div>
+                  <div class="edu-degree">B.Tech — Computer Science (AI Specialization)</div>
+                  <div class="edu-school">Galgotias College of Engineering and Technology</div>
+                  <div class="edu-meta">Jan 2026 &nbsp;|&nbsp; CGPA: 8.0/10</div>
+                </div>
+              </div>
+            </div>
+            <div class="about-objective">
+              <span class="obj-label">Career Objective</span>
+              <p>To leverage AI, machine learning, and full-stack development skills to build data-driven products that create tangible business value, while continuously growing in a collaborative, innovation-first environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills" class="section-pad section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">Tech Arsenal</h2>
+      </div>
+      <div class="row g-4">
+
+        <!-- Programming -->
+        <div class="col-md-6 col-xl-4 reveal">
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+            <h3 class="skill-card-title">Programming</h3>
+            <div class="skill-pills">
+              <span class="pill">Python</span>
+              <span class="pill">C++</span>
+              <span class="pill">SQL</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">HTML5</span>
+              <span class="pill">CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science & ML -->
+        <div class="col-md-6 col-xl-4 reveal reveal-delay-1">
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="fas fa-robot"></i></div>
+            <h3 class="skill-card-title">Data Science & ML</h3>
+            <div class="skill-pills">
+              <span class="pill">Pandas</span>
+              <span class="pill">NumPy</span>
+              <span class="pill">Scikit-learn</span>
+              <span class="pill">Matplotlib</span>
+              <span class="pill">Seaborn</span>
+              <span class="pill">MLflow</span>
+            </div>
+            <div class="skill-bar-group mt-3">
+              <div class="sbar-item">
+                <div class="sbar-label"><span>Machine Learning</span><span>90%</span></div>
+                <div class="sbar-track"><div class="sbar-fill" data-width="90"></div></div>
+              </div>
+              <div class="sbar-item">
+                <div class="sbar-label"><span>Data Analytics</span><span>88%</span></div>
+                <div class="sbar-track"><div class="sbar-fill" data-width="88"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deep Learning & GenAI -->
+        <div class="col-md-6 col-xl-4 reveal reveal-delay-2">
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="fas fa-brain"></i></div>
+            <h3 class="skill-card-title">Deep Learning & GenAI</h3>
+            <div class="skill-pills">
+              <span class="pill">TensorFlow</span>
+              <span class="pill">Keras</span>
+              <span class="pill">CNN / RNN</span>
+              <span class="pill">LangChain</span>
+              <span class="pill">RAG</span>
+              <span class="pill">LLMs</span>
+            </div>
+            <div class="skill-bar-group mt-3">
+              <div class="sbar-item">
+                <div class="sbar-label"><span>Deep Learning</span><span>80%</span></div>
+                <div class="sbar-track"><div class="sbar-fill" data-width="80"></div></div>
+              </div>
+              <div class="sbar-item">
+                <div class="sbar-label"><span>Generative AI</span><span>75%</span></div>
+                <div class="sbar-track"><div class="sbar-fill" data-width="75"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="col-md-6 col-xl-4 reveal">
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="skill-card-title">Frontend Development</h3>
+            <div class="skill-pills">
+              <span class="pill">React.js</span>
+              <span class="pill">Tailwind CSS</span>
+              <span class="pill">Bootstrap 5</span>
+              <span class="pill">Vite</span>
+              <span class="pill">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & DB -->
+        <div class="col-md-6 col-xl-4 reveal reveal-delay-1">
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+            <h3 class="skill-card-title">Tools & Databases</h3>
+            <div class="skill-pills">
+              <span class="pill">MySQL</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">Power BI</span>
+              <span class="pill">Excel</span>
+              <span class="pill">Git / GitHub</span>
+              <span class="pill">Streamlit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & Extras -->
+        <div class="col-md-6 col-xl-4 reveal reveal-delay-2">
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="fas fa-cloud"></i></div>
+            <h3 class="skill-card-title">Cloud & Backend</h3>
+            <div class="skill-pills">
+              <span class="pill">Oracle Cloud</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Express.js</span>
+              <span class="pill">JWT Auth</span>
+              <span class="pill">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects" class="section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 — Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+      <div class="row g-4">
+
+        <!-- Project 1 -->
+        <div class="col-lg-6 reveal">
+          <div class="proj-card">
+            <div class="proj-card-header">
+              <div class="proj-icon proj-icon-blue"><i class="fas fa-tasks"></i></div>
+              <div class="proj-links">
+                <a href="https://team-task-manager-gamma-khaki.vercel.app" target="_blank" class="proj-link-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+              </div>
+            </div>
+            <h3 class="proj-title">Team Task Manager</h3>
+            <p class="proj-desc">Full Stack MERN application for project & task management with role-based access control, JWT authentication, and a real-time dashboard with glassmorphism UI.</p>
+            <div class="proj-stack">
+              <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span><span>JWT</span><span>Tailwind</span>
+            </div>
+            <div class="proj-features">
+              <span><i class="fas fa-check-circle"></i> Role-Based Access (Admin/Member)</span>
+              <span><i class="fas fa-check-circle"></i> Full CRUD Task Tracking</span>
+              <span><i class="fas fa-check-circle"></i> Responsive Glassmorphism UI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-6 reveal reveal-delay-1">
+          <div class="proj-card">
+            <div class="proj-card-header">
+              <div class="proj-icon proj-icon-purple"><i class="fas fa-brain"></i></div>
+              <div class="proj-links">
+                <a href="https://personality-deduction-meizhmfpxrk94kh4vvbrcv.streamlit.app/" target="_blank" class="proj-link-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+              </div>
+            </div>
+            <h3 class="proj-title">Personality Deduction App</h3>
+            <p class="proj-desc">ML-powered Streamlit app predicting Extrovert / Introvert / Ambivert from 16+ personality trait scores using Logistic Regression with StandardScaler preprocessing.</p>
+            <div class="proj-stack">
+              <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Streamlit</span><span>Logistic Regression</span>
+            </div>
+            <div class="proj-features">
+              <span><i class="fas fa-star"></i> 99.75% Model Accuracy</span>
+              <span><i class="fas fa-check-circle"></i> 16+ Personality Features</span>
+              <span><i class="fas fa-check-circle"></i> Real-time Slider Inputs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-6 reveal">
+          <div class="proj-card">
+            <div class="proj-card-header">
+              <div class="proj-icon proj-icon-green"><i class="fas fa-heartbeat"></i></div>
+              <div class="proj-links">
+                <a href="https://smart-health-predictor-cy2oyhvpsfaw5f2cvsq3xy.streamlit.app/" target="_blank" class="proj-link-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+              </div>
+            </div>
+            <h3 class="proj-title">SmartHealth Predictor</h3>
+            <p class="proj-desc">Disease risk prediction using lifestyle parameters via Decision Tree Classifier. Multi-page Streamlit app with interactive decision tree visualization and real-time prediction.</p>
+            <div class="proj-stack">
+              <span>Python</span><span>Scikit-learn</span><span>Decision Tree</span><span>Streamlit</span><span>Pandas</span>
+            </div>
+            <div class="proj-features">
+              <span><i class="fas fa-check-circle"></i> ~75% Model Accuracy</span>
+              <span><i class="fas fa-check-circle"></i> Interactive Tree Visualization</span>
+              <span><i class="fas fa-check-circle"></i> Multi-page Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-lg-6 reveal reveal-delay-1">
+          <div class="proj-card">
+            <div class="proj-card-header">
+              <div class="proj-icon proj-icon-orange"><i class="fas fa-university"></i></div>
+              <div class="proj-links">
+                <a href="https://ai-loan-approval-system-wbb5tudpscpd7fguervc84.streamlit.app/" target="_blank" class="proj-link-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+              </div>
+            </div>
+            <h3 class="proj-title">AI Loan Approval System</h3>
+            <p class="proj-desc">Loan default prediction using Gaussian Naive Bayes for credit risk assessment. Real-time ML-based approval decision with clean Streamlit form interface.</p>
+            <div class="proj-stack">
+              <span>Python</span><span>Naive Bayes</span><span>Pandas</span><span>NumPy</span><span>Streamlit</span>
+            </div>
+            <div class="proj-features">
+              <span><i class="fas fa-star"></i> 84.97% Model Accuracy</span>
+              <span><i class="fas fa-check-circle"></i> Real-time Risk Analysis</span>
+              <span><i class="fas fa-check-circle"></i> Financial Attribute Modeling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 — Resume Project -->
+        <div class="col-lg-6 reveal">
+          <div class="proj-card">
+            <div class="proj-card-header">
+              <div class="proj-icon proj-icon-teal"><i class="fas fa-home"></i></div>
+            </div>
+            <h3 class="proj-title">Real Estate Property Listing</h3>
+            <p class="proj-desc">Responsive real estate web application using React.js with property search, filtering, dynamic UI components, and REST API integration for real-time property data.</p>
+            <div class="proj-stack">
+              <span>React.js</span><span>HTML5</span><span>CSS3</span><span>REST APIs</span>
+            </div>
+            <div class="proj-features">
+              <span><i class="fas fa-check-circle"></i> Property Search & Filter</span>
+              <span><i class="fas fa-check-circle"></i> Dynamic UI Components</span>
+              <span><i class="fas fa-check-circle"></i> Performance Optimised</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 — RAG Chatbot -->
+        <div class="col-lg-6 reveal reveal-delay-1">
+          <div class="proj-card">
+            <div class="proj-card-header">
+              <div class="proj-icon proj-icon-pink"><i class="fas fa-comments"></i></div>
+            </div>
+            <h3 class="proj-title">Generative AI RAG Chatbot</h3>
+            <p class="proj-desc">Retrieval-Augmented Generation system using LangChain and Vector Databases. Integrates embeddings and LLM APIs for contextual, document-aware query answering.</p>
+            <div class="proj-stack">
+              <span>LangChain</span><span>Vector DB</span><span>LLM APIs</span><span>Python</span><span>Embeddings</span>
+            </div>
+            <div class="proj-features">
+              <span><i class="fas fa-check-circle"></i> Document-aware Responses</span>
+              <span><i class="fas fa-check-circle"></i> Embedding Integration</span>
+              <span><i class="fas fa-check-circle"></i> Contextual Query Answering</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE / CERTIFICATIONS ─── -->
+  <section id="experience" class="section-pad section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 — Experience</span>
+        <h2 class="section-title">Certifications & Experience</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="timeline">
+
+            <div class="tl-item reveal">
+              <div class="tl-dot tl-dot-oracle"></div>
+              <div class="tl-card">
+                <div class="tl-badge">Certification</div>
+                <h4>Oracle Cloud Infrastructure 2025</h4>
+                <p class="tl-sub">Certified Data Science Professional</p>
+                <p class="tl-desc">Advanced certification validating expertise in OCI Data Science platform, ML model lifecycle management, and cloud-based AI workflows.</p>
+              </div>
+            </div>
+
+            <div class="tl-item reveal reveal-delay-1">
+              <div class="tl-dot tl-dot-oracle"></div>
+              <div class="tl-card">
+                <div class="tl-badge">Certification</div>
+                <h4>Oracle Cloud Infrastructure 2025</h4>
+                <p class="tl-sub">Certified AI Foundations Associate</p>
+                <p class="tl-desc">Foundation certification covering AI/ML concepts, OCI AI services, and responsible AI practices on cloud infrastructure.</p>
+              </div>
+            </div>
+
+            <div class="tl-item reveal reveal-delay-2">
+              <div class="tl-dot tl-dot-ibm"></div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-ibm">IBM</div>
+                <h4>IBM SkillsBuild</h4>
+                <p class="tl-sub">Introduction to Artificial Intelligence</p>
+                <p class="tl-desc">Comprehensive AI fundamentals course covering ML algorithms, neural networks, and real-world AI application development.</p>
+              </div>
+            </div>
+
+            <div class="tl-item reveal">
+              <div class="tl-dot tl-dot-google"></div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-google">Google</div>
+                <h4>Google Cloud</h4>
+                <p class="tl-sub">Introduction to Generative AI</p>
+                <p class="tl-desc">Foundation in large language models, prompt engineering, and building Generative AI applications on Google Cloud.</p>
+              </div>
+            </div>
+
+            <div class="tl-item reveal reveal-delay-1">
+              <div class="tl-dot tl-dot-tata"></div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-tata">TATA</div>
+                <h4>TATA / Deloitte</h4>
+                <p class="tl-sub">Data Analytics Job Simulation</p>
+                <p class="tl-desc">Hands-on simulation of real-world data analytics tasks including data cleaning, EDA, visualization, and business reporting.</p>
+              </div>
+            </div>
+
+            <div class="tl-item reveal reveal-delay-2">
+              <div class="tl-dot tl-dot-hr"></div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-hr">HackerRank</div>
+                <h4>HackerRank</h4>
+                <p class="tl-sub">SQL (Advanced) · Problem Solving · Software Engineer Intern</p>
+                <p class="tl-desc">Industry-recognised certifications validating advanced SQL proficiency, algorithmic problem solving, and software engineering fundamentals.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="cert-summary reveal reveal-delay-1">
+            <div class="cs-header">
+              <i class="fas fa-trophy"></i>
+              <span>Achievement Summary</span>
+            </div>
+            <div class="cs-stat">
+              <span class="cs-num">6+</span>
+              <span class="cs-label">Certifications</span>
+            </div>
+            <div class="cs-stat">
+              <span class="cs-num">4+</span>
+              <span class="cs-label">Deployed ML Apps</span>
+            </div>
+            <div class="cs-stat">
+              <span class="cs-num">8.0</span>
+              <span class="cs-label">CGPA / 10</span>
+            </div>
+            <div class="cs-stat">
+              <span class="cs-num">2</span>
+              <span class="cs-label">Oracle Certifications</span>
+            </div>
+            <div class="cs-footer">
+              <i class="fas fa-map-marker-alt"></i> New Delhi, India
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact" class="section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 — Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-5 reveal">
+          <p class="contact-intro">
+            I'm actively looking for internship and full-time opportunities in AI, Data Science, and Full Stack development.
+            Drop me a message — I reply within 24 hours.
+          </p>
+          <div class="contact-info-list">
+            <div class="ci-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="ci-label">Email</div>
+                <a href="mailto:hsachan295@gmail.com" class="ci-val">hsachan295@gmail.com</a>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="ci-label">Phone</div>
+                <a href="tel:+918604304079" class="ci-val">+91 8604304079</a>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <div class="ci-label">LinkedIn</div>
+                <a href="https://linkedin.com/in/harsh-sachan-b3b24a2a2" target="_blank" class="ci-val">harsh-sachan-b3b24a2a2</a>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <div class="ci-label">GitHub</div>
+                <a href="https://github.com/hsachan295-source" target="_blank" class="ci-val">github.com/hsachan295-source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal reveal-delay-1">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="cfName">Full Name</label>
+                  <input type="text" id="cfName" class="cf-input" placeholder="John Doe" required />
+                  <span class="cf-error">Please enter your name.</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="cfEmail">Email</label>
+                  <input type="email" id="cfEmail" class="cf-input" placeholder="john@example.com" required />
+                  <span class="cf-error">Please enter a valid email.</span>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="cfSubject">Subject</label>
+                  <input type="text" id="cfSubject" class="cf-input" placeholder="Internship Opportunity / Collaboration" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="cfMsg">Message</label>
+                  <textarea id="cfMsg" class="cf-input" rows="5" placeholder="Tell me about your opportunity..." required></textarea>
+                  <span class="cf-error">Please enter your message.</span>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-custom w-100" id="cfSubmit">
+                  <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <div id="cfSuccess" class="cf-success-msg" style="display:none;">
+                  <i class="fas fa-check-circle"></i> Message sent! I'll reply within 24 hours.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="brand-hs">HS</span><span class="brand-dot">.</span>
+          <span class="footer-tagline">Building the future, one model at a time.</span>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/harsh-sachan-b3b24a2a2" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/hsachan295-source" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:hsachan295@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 Harsh Sachan. Crafted with <i class="fas fa-heart"></i> and Python.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top -->
+  <button id="scrollTop" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
