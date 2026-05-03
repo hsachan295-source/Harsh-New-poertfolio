@@ -852,3 +852,29 @@ img { max-width: 100%; }
   .av-ring-1 { width: 170px; height: 170px; }
   .av-ring-2 { width: 220px; height: 220px; }
 }
+
+/* ── CarValue gold icon ── */
+.proj-icon-gold {
+  background: linear-gradient(135deg, rgba(232,184,75,0.15), rgba(232,184,75,0.05));
+  border: 1px solid rgba(232,184,75,0.35);
+  color: #e8b84b;
+}
+
+/* ── GitHub link button variant ── */
+.proj-link-gh {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  color: #dde2ef !important;
+}
+.proj-link-gh:hover {
+  background: rgba(255,255,255,0.12) !important;
+}
+
+/* ── Featured card subtle highlight ── */
+.proj-card-featured {
+  border-color: rgba(232,184,75,0.2) !important;
+}
+.proj-card-featured:hover {
+  border-color: rgba(232,184,75,0.45) !important;
+  box-shadow: 0 8px 40px rgba(232,184,75,0.08) !important;
+}
