@@ -896,3 +896,20 @@ img { max-width: 100%; }
   border-color: rgba(232,184,75,0.45) !important;
   box-shadow: 0 8px 40px rgba(232,184,75,0.08) !important;
 }
+
+/* ── CineSuggest cinema/cyan icon ── */
+.proj-icon-cinema {
+  background: linear-gradient(135deg, rgba(6,182,212,0.15), rgba(168,85,247,0.05));
+  border: 1px solid rgba(6,182,212,0.35);
+  color: #06b6d4;
+}
+
+/* ── CineSuggest card neon glow ── */
+.proj-card-cinema-glow {
+  border-color: rgba(6,182,212,0.2) !important;
+  background: linear-gradient(160deg, var(--surface) 80%, rgba(168,85,247,0.04) 100%) !important;
+}
+.proj-card-cinema-glow:hover {
+  border-color: rgba(6,182,212,0.45) !important;
+  box-shadow: 0 8px 40px rgba(6,182,212,0.08), 0 8px 40px rgba(168,85,247,0.08), var(--shadow) !important;
+}
