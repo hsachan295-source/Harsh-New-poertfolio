@@ -930,3 +930,20 @@ img { max-width: 100%; }
   border-color: rgba(167,139,250,0.45) !important;
   box-shadow: 0 8px 40px rgba(167,139,250,0.08), 0 8px 40px rgba(74,222,128,0.08), var(--shadow) !important;
 }
+
+/* ── SavorShield fresh-rotten emerald-crimson icon ── */
+.proj-icon-shield {
+  background: linear-gradient(135deg, rgba(74,222,128,0.15), rgba(239,68,68,0.08));
+  border: 1px solid rgba(74,222,128,0.35);
+  color: #4ade80;
+}
+
+/* ── SavorShield card dual emerald-crimson glow ── */
+.proj-card-shield-glow {
+  border-color: rgba(74,222,128,0.2) !important;
+  background: linear-gradient(160deg, var(--surface) 80%, rgba(239,68,68,0.03) 100%) !important;
+}
+.proj-card-shield-glow:hover {
+  border-color: rgba(74,222,128,0.45) !important;
+  box-shadow: 0 8px 40px rgba(74,222,128,0.08), 0 8px 40px rgba(239,68,68,0.08), var(--shadow) !important;
+}
